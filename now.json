@@ -1,5 +1,5 @@
 {
   "version": 2,
-  "name": "00-template",
+  "name": "02-cats-for-all",
   "routes": [{ "src": "/", "dest": "/public/index.html" }]
 }
