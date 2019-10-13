@@ -1,11 +1,412 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>02-cats-for-all</title>
-    <link rel="stylesheet" href="./index.css">
-  </head>
-  <body>
-    <!-- TODO -->
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>02-cats-for-all</title>
+  <link href="./index.css" rel="stylesheet">
+</head>
+<body>
+<header class="sticky border-bottom opaque">
+  <h1 class="site-name centered">
+    <a class="hidden-link-without-hover" href="index.html">Мурмаркет</a>
+  </h1>
+</header>
+<input class="breed-filter-input" id="breed-filter-1" name="breed-filter" type="checkbox" value="длинноус ушастый" checked>
+<input class="breed-filter-input" id="breed-filter-2" name="breed-filter" type="checkbox" value="вкусноносый плюх" checked>
+<input class="breed-filter-input" id="breed-filter-3" name="breed-filter" type="checkbox" value="круглоухий рекс" checked>
+<input class="breed-filter-input" id="breed-filter-4" name="breed-filter" type="checkbox" value="болгарский жмых" checked>
+<input class="breed-filter-input" id="breed-filter-5" name="breed-filter" type="checkbox" value=крюггер" checked>
+<input class="breed-filter-input" id="breed-filter-6" name="breed-filter" type="checkbox" value="египетская лауги" checked>
+<input class="breed-filter-input" id="breed-filter-7" name="breed-filter" type="checkbox" value="османская белая" checked>
+<input class="breed-filter-input" id="breed-filter-8" name="breed-filter" type="checkbox" value="рыжик-пыжик" checked>
+<input class="breed-filter-input" id="breed-filter-none" name="breed-filter" type="checkbox" value="без породы" checked>
+<main>
+  <ul class="cat-container">
+    <li class="cat-card border shadow breed-1">
+      <a id="cat-1" class="anchor"></a>
+      <img title="Шуня" alt="Шуня"
+           class="cat-image" src="images/avatar/1.jpg"/>
+      <div class="cat-description">
+        <h2 class="cat-name ellipsis-text" title="Шуня">
+          <a class="hidden-link">Шуня</a>
+        </h2>
+        <div class="cat-information muted">
+          <div class="cat-character full-text">
+            Активная, игривая.
+          </div>
+          <div class="cat-age ellipsis-text" title="Возраст: 1,5 года">
+            Возраст: 1,5 года
+          </div>
+          <div class="cat-breed ellipsis-text" title="Порода: длинноус ушастый">
+            Порода: длинноус ушастый
+          </div>
+          <div class="cat-diseases ellipsis-text" title="Болезни: нет">
+            Болезни: нет
+          </div>
+          <div class="cat-status ellipsis-text" title="Статус: ищет хозяина">
+            Статус: ищет хозяина
+          </div>
+          <div class="cat-text full-text">
+            Очень любит детей, чистоплотная.
+            Не любит, когда незнакомцы берут её на руки, но не царапается, а просто убегает.
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cat-card border shadow breed-2">
+      <a id="cat-2" class="anchor"></a>
+      <img title="Костик" alt="Костик"
+           class="cat-image" src="images/avatar/2.jpg"/>
+      <div class="cat-description">
+        <h2 class="cat-name ellipsis-text" title="Костик">
+          <a class="hidden-link">Костик</a>
+        </h2>
+        <div class="cat-information muted">
+          <div class="cat-character full-text">
+            Активный, непоседа.
+          </div>
+          <div class="cat-age ellipsis-text" title="Возраст: 8 месяцев">
+            Возраст: 8 месяцев
+          </div>
+          <div class="cat-breed ellipsis-text" title="Порода: вкусноносый плюх">
+            Порода: вкусноносый плюх
+          </div>
+          <div class="cat-diseases ellipsis-text" title="Болезни: нет">
+            Болезни: нет
+          </div>
+          <div class="cat-status ellipsis-text" title="Статус: ищет хозяина">
+            Статус: ищет хозяина
+          </div>
+          <div class="cat-text full-text">
+            Весёлый и активный пацан, хотели себе оставить, но переезжаем.
+            Отдадим в добрые руки. На задней левой лапе есть очень красивое пятнышко.
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cat-card border shadow breed-3">
+      <a id="cat-3" class="anchor"></a>
+      <img title="Венера" alt="Венера"
+           class="cat-image" src="images/avatar/3.jpg"/>
+      <div class="cat-description">
+        <h2 class="cat-name ellipsis-text" title="Венера">
+          <a class="hidden-link">Венера</a>
+        </h2>
+        <div class="cat-information muted">
+          <div class="cat-character full-text">
+            Спокойная, умная.
+          </div>
+          <div class="cat-age ellipsis-text" title="Возраст: 6 месяцев">
+            Возраст: 6 месяцев
+          </div>
+          <div class="cat-breed ellipsis-text" title="Порода: круглоухий рекс">
+            Порода: круглоухий рекс
+          </div>
+          <div class="cat-diseases ellipsis-text" title="Болезни: нет">
+            Болезни: нет
+          </div>
+          <div class="cat-status ellipsis-text" title="Статус: ищет хозяина">
+            Статус: ищет хозяина
+          </div>
+          <div class="cat-text full-text">
+            Отдадим очень умную и ласковую кошечку в хорошие руки.
+            Уживается и с детьми, и с другими питомцами. Не любит, когда трогают за хвост.
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cat-card border shadow breed-4">
+      <a id="cat-4" class="anchor"></a>
+      <img title="Блиц" alt="Блиц"
+           class="cat-image" src="images/avatar/4.jpg"/>
+      <div class="cat-description">
+        <h2 class="cat-name ellipsis-text" title="Блиц">
+          <a class="hidden-link">Блиц</a>
+        </h2>
+        <div class="cat-information muted">
+          <div class="cat-character full-text">
+            Озорной, забавный, ласковый.
+          </div>
+          <div class="cat-age ellipsis-text" title="Возраст: 8 месяцев">
+            Возраст: 8 месяцев
+          </div>
+          <div class="cat-breed ellipsis-text" title="Порода: болгарский жмых">
+            Порода: болгарский жмых
+          </div>
+          <div class="cat-diseases ellipsis-text" title="Болезни: нет">
+            Болезни: нет
+          </div>
+          <div class="cat-status ellipsis-text" title="Статус: ищет хозяина">
+            Статус: ищет хозяина
+          </div>
+          <div class="cat-text full-text">
+            Очень фотогиеничный кот. Отдам в хорошие руки.
+            Немного привередливый, но если его погладить, то согласится на всё,
+            что вы у него попросите. Есть аллергия на рыбу.
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cat-card border shadow breed-none">
+      <a id="cat-5" class="anchor"></a>
+      <img title="Сирена" alt="Сирена"
+           class="cat-image" src="images/avatar/5.jpg"/>
+      <div class="cat-description">
+        <h2 class="cat-name ellipsis-text" title="Сирена">
+          <a class="hidden-link">Сирена</a>
+        </h2>
+        <div class="cat-information muted">
+          <div class="cat-character full-text">
+            Активная, общительная.
+          </div>
+          <div class="cat-age ellipsis-text" title="Возраст: 10 месяцев">
+            Возраст: 10 месяцев
+          </div>
+          <div class="cat-breed ellipsis-text" title="Порода: нет">
+            Порода: нет
+          </div>
+          <div class="cat-diseases ellipsis-text" title="Болезни: нет">
+            Болезни: нет
+          </div>
+          <div class="cat-status ellipsis-text" title="Статус: ищет хозяина">
+            Статус: ищет хозяина
+          </div>
+          <div class="cat-text full-text">
+            Любит детей, взрослых, других питомцев. Чересчур активная, когда много гостей.
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cat-card border shadow breed-5">
+      <a id="cat-6" class="anchor"></a>
+      <img title="Серафим Иванович" alt="Серафим Иванович"
+           class="cat-image" src="images/avatar/6.jpg"/>
+      <div class="cat-description">
+        <h2 class="cat-name ellipsis-text" title="Серафим Иванович">
+          <a class="hidden-link">Серафим Иванович</a>
+        </h2>
+        <div class="cat-information muted">
+          <div class="cat-character full-text">
+            Спокойный, дружелюбный.
+          </div>
+          <div class="cat-age ellipsis-text" title="Возраст: 2 года">
+            Возраст: 2 года
+          </div>
+          <div class="cat-breed ellipsis-text" title="Порода: крюггер">
+            Порода: крюггер
+          </div>
+          <div class="cat-diseases ellipsis-text" title="Болезни: нет">
+            Болезни: нет
+          </div>
+          <div class="cat-status ellipsis-text" title="Статус: ищет хозяина">
+            Статус: ищет хозяина
+          </div>
+          <div class="cat-text full-text">
+            Родилась дочка, у неё аллергия на котов, поэтому срочно ищем нового хозяина
+            для нашего кота. Из особенностей: очень редко есть корм, любит человеческую еду.
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cat-card border shadow breed-6">
+      <a id="cat-7" class="anchor"></a>
+      <img title="Снежинка" alt="Снежинка"
+           class="cat-image" src="images/avatar/7.jpg"/>
+      <div class="cat-description">
+        <h2 class="cat-name ellipsis-text" title="Снежинка">
+          <a class="hidden-link">Снежинка</a>
+        </h2>
+        <div class="cat-information muted">
+          <div class="cat-character full-text">
+            Чистоплотная, добрая, милая.
+          </div>
+          <div class="cat-age ellipsis-text" title="Возраст: 1 год">
+            Возраст: 1 год
+          </div>
+          <div class="cat-breed ellipsis-text" title="Порода: египетская лауги">
+            Порода: египетская лауги
+          </div>
+          <div class="cat-diseases ellipsis-text" title="Болезни: нет">
+            Болезни: нет
+          </div>
+          <div class="cat-status ellipsis-text" title="Статус: ищет хозяина">
+            Статус: ищет хозяина
+          </div>
+          <div class="cat-text full-text"></div>
+        </div>
+      </div>
+    </li>
+    <li class="cat-card border shadow breed-5">
+      <a id="cat-8" class="anchor"></a>
+      <img title="Тарас" alt="Тарас"
+           class="cat-image" src="images/avatar/8.jpg"/>
+      <div class="cat-description">
+        <h2 class="cat-name ellipsis-text" title="Тарас">
+          <a class="hidden-link">Тарас</a>
+        </h2>
+        <div class="cat-information muted">
+          <div class="cat-character full-text">
+            Дружелюбный, ласковый.
+          </div>
+          <div class="cat-age ellipsis-text" title="Возраст: 1 год">
+            Возраст: 1 год
+          </div>
+          <div class="cat-breed ellipsis-text" title="Порода: европейский крюггер">
+            Порода: европейский крюггер
+          </div>
+          <div class="cat-diseases ellipsis-text" title="Болезни: нет">
+            Болезни: нет
+          </div>
+          <div class="cat-status ellipsis-text" title="Статус: ищет хозяина">
+            Статус: ищет хозяина
+          </div>
+          <div class="cat-text full-text">
+            Очень дружелюбный и ласковый кот.
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cat-card border shadow breed-3">
+      <a id="cat-9" class="anchor"></a>
+      <img title="Люси" alt="Люси"
+           class="cat-image" src="images/avatar/9.jpg"/>
+      <div class="cat-description">
+        <h2 class="cat-name ellipsis-text" title="Люси">
+          <a class="hidden-link">Люси</a>
+        </h2>
+        <div class="cat-information muted">
+          <div class="cat-character full-text">
+            Глупенькая, забавная.
+          </div>
+          <div class="cat-age ellipsis-text" title="Возраст: 1 год">
+            Возраст: 1 месяц
+          </div>
+          <div class="cat-breed ellipsis-text" title="Порода: круглоухий рекс">
+            Порода: круглоухий рекс
+          </div>
+          <div class="cat-diseases ellipsis-text" title="Болезни: нет">
+            Болезни: нет
+          </div>
+          <div class="cat-status ellipsis-text" title="Статус: ищет хозяина">
+            Статус: ищет хозяина
+          </div>
+          <div class="cat-text full-text">
+            Мало ест, мало спит, но любит проводить время с другими котами.
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cat-card border shadow breed-7">
+      <a id="cat-10" class="anchor"></a>
+      <img title="Луна" alt="Луна"
+           class="cat-image" src="images/avatar/10.jpg"/>
+      <div class="cat-description">
+        <h2 class="cat-name ellipsis-text" title="Луна">
+          <a class="hidden-link">Луна</a>
+        </h2>
+        <div class="cat-information muted">
+          <div class="cat-character full-text">
+            Нежная, спокойная, ласковая.
+          </div>
+          <div class="cat-age ellipsis-text" title="Возраст: 1 год">
+            Возраст: 1,5 года
+          </div>
+          <div class="cat-breed ellipsis-text" title="Порода: османская белая">
+            Порода: османская белая
+          </div>
+          <div class="cat-diseases ellipsis-text" title="Болезни: нет">
+            Болезни: нет
+          </div>
+          <div class="cat-status ellipsis-text" title="Статус: ищет хозяина">
+            Статус: ищет хозяина
+          </div>
+          <div class="cat-text full-text">
+            Очень ласковая, добрая, к горшку приучена, стерилизованная и привитая.
+            Лоточек и миски отдадим вместе с кошечкой.
+            Доверим только в самые заботливые и любящие руки.
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cat-card border shadow breed-8">
+      <a id="cat-11" class="anchor"></a>
+      <img title="Лаврентий" alt="Лаврентий"
+           class="cat-image" src="images/avatar/11.jpg"/>
+      <div class="cat-description">
+        <h2 class="cat-name ellipsis-text" title="Лаврентий">
+          <a class="hidden-link">Лаврентий</a>
+        </h2>
+        <div class="cat-information muted">
+          <div class="cat-character full-text">
+            Любящий, общительный, активный.
+          </div>
+          <div class="cat-age ellipsis-text" title="Возраст: 1 год">
+            Возраст: 9 месяцев
+          </div>
+          <div class="cat-breed ellipsis-text" title="Порода: рыжик-пыжик">
+            Порода: рыжик-пыжик
+          </div>
+          <div class="cat-diseases ellipsis-text" title="Болезни: нет">
+            Болезни: нет
+          </div>
+          <div class="cat-status ellipsis-text" title="Статус: ищет хозяина">
+            Статус: ищет хозяина
+          </div>
+          <div class="cat-text full-text">
+            Очень любит кушать, ест любую еду.
+            Задняя правая лапка немного хромает, так как подрался во дворе с другими котами.
+            Есть сестра, можем отдать вместе с ней.
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</main>
+<aside>
+  <section class="age-filter">
+    <h2 class="filter-name">Возраст</h2>
+    <input class="cool-range" id="age-filter-min" name="age-filter" type="range" min="0" max="10" value="0">
+    <div class="age-filter-text">от 2 до 4 лет</div>
+  </section>
+  <section class="breed-filter">
+    <h2 class="filter-name">Порода</h2>
+    <label class="cool-checkbox" for="breed-filter-1">длинноус ушастый</label>
+    <label class="cool-checkbox" for="breed-filter-2">вкусноносый плюх</label>
+    <label class="cool-checkbox" for="breed-filter-3">круглоухий рекс</label>
+    <label class="cool-checkbox" for="breed-filter-4">болгарский жмых</label>
+    <label class="cool-checkbox" for="breed-filter-5">крюггер</label>
+    <label class="cool-checkbox" for="breed-filter-6">египетская лауги</label>
+    <label class="cool-checkbox" for="breed-filter-7">османская белая</label>
+    <label class="cool-checkbox" for="breed-filter-8">рыжик-пыжик</label>
+    <label class="cool-checkbox" for="breed-filter-none">без породы</label>
+  </section>
+</aside>
+<footer class="border-top">
+  <div class="wrapper">
+    <div class="contacts">
+      <div class="write-us muted">Напишите нам:</div>
+      <div class="email">
+        <img class="email-icon small-icon" src="images/icon/email.png" alt="email">
+        <a class="email-address">cats@babuli.ru</a>
+      </div>
+      <div class="email">
+        <img class="email-icon small-icon" src="images/icon/email.png" alt="email">
+        <a class="email-address">vnuchek@babuli.ru</a>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="ellipsis-text icons-made-by">Icons made by
+        <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
+        and
+        <a href="https://www.flaticon.com/authors/google" title="Google">Google</a>
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+      </div>
+      <div class="site-copyright" title="Бабушкины котятки">
+        © 2019 ООО «<a href="index.html">Бабушкины котятки</a>»
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
 </html>
