@@ -194,8 +194,6 @@ body > footer .wrapper {
   }
 
   .cat-container > .cat-card {
-    float: left;
-
     display: block;
 
     width: available;
@@ -250,17 +248,17 @@ body > footer .wrapper {
   }
 
   .cat-container {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
 
     margin-top: 0;
     padding-left: 0;
   }
 
   .cat-container > .cat-card {
-    float: left;
-
     display: block;
 
+    min-width: max-content;
     margin: 0.6rem 1.2rem 0.6rem 1.2rem;
 
     list-style-type: none;
@@ -319,7 +317,7 @@ body > footer .wrapper {
   }
 
   .cat-container > .cat-card {
-    float: none;
+    display: flex;
 
     min-width: 800px;
     height: 400px;
@@ -329,14 +327,10 @@ body > footer .wrapper {
     list-style-type: none;
   }
   .cat-container .cat-card .cat-image {
-    float: left;
-
     width: 400px;
     height: 400px;
   }
   .cat-container > .cat-card .cat-description {
-    float: left;
-
     width: calc(100% - 400px);
     height: max-content;
   }
@@ -408,74 +402,74 @@ body > footer .wrapper {
 .cat-card {
   display: block;
 }
-#breed-filter-1:not(:checked) ~ main > .cat-container > .breed-1 {
+.breed-filter-1:not(:checked) ~ main > .cat-container > .breed-1 {
   display: none;
 }
-#breed-filter-1:checked ~ aside > .breed-filter > .cool-checkbox[for='breed-filter-1'] {
+.breed-filter-1:checked ~ aside > .breed-filter > .cool-checkbox[for='breed-filter-1'] {
   border-color: var(--accent-color-border);
 
   background-color: var(--accent-color-opacity);
 }
-#breed-filter-2:not(:checked) ~ main > .cat-container > .breed-2 {
+.breed-filter-2:not(:checked) ~ main > .cat-container > .breed-2 {
   display: none;
 }
-#breed-filter-2:checked ~ aside > .breed-filter > .cool-checkbox[for='breed-filter-2'] {
+.breed-filter-2:checked ~ aside > .breed-filter > .cool-checkbox[for='breed-filter-2'] {
   border-color: var(--accent-color-border);
 
   background-color: var(--accent-color-opacity);
 }
-#breed-filter-3:not(:checked) ~ main > .cat-container > .breed-3 {
+.breed-filter-3:not(:checked) ~ main > .cat-container > .breed-3 {
   display: none;
 }
-#breed-filter-3:checked ~ aside > .breed-filter > .cool-checkbox[for='breed-filter-3'] {
+.breed-filter-3:checked ~ aside > .breed-filter > .cool-checkbox[for='breed-filter-3'] {
   border-color: var(--accent-color-border);
 
   background-color: var(--accent-color-opacity);
 }
-#breed-filter-4:not(:checked) ~ main > .cat-container > .breed-4 {
+.breed-filter-4:not(:checked) ~ main > .cat-container > .breed-4 {
   display: none;
 }
-#breed-filter-4:checked ~ aside > .breed-filter > .cool-checkbox[for='breed-filter-4'] {
+.breed-filter-4:checked ~ aside > .breed-filter > .cool-checkbox[for='breed-filter-4'] {
   border-color: var(--accent-color-border);
 
   background-color: var(--accent-color-opacity);
 }
-#breed-filter-5:not(:checked) ~ main > .cat-container > .breed-5 {
+.breed-filter-5:not(:checked) ~ main > .cat-container > .breed-5 {
   display: none;
 }
-#breed-filter-5:checked ~ aside > .breed-filter > .cool-checkbox[for='breed-filter-5'] {
+.breed-filter-5:checked ~ aside > .breed-filter > .cool-checkbox[for='breed-filter-5'] {
   border-color: var(--accent-color-border);
 
   background-color: var(--accent-color-opacity);
 }
-#breed-filter-6:not(:checked) ~ main > .cat-container > .breed-6 {
+.breed-filter-6:not(:checked) ~ main > .cat-container > .breed-6 {
   display: none;
 }
-#breed-filter-6:checked ~ aside > .breed-filter > .cool-checkbox[for='breed-filter-6'] {
+.breed-filter-6:checked ~ aside > .breed-filter > .cool-checkbox[for='breed-filter-6'] {
   border-color: var(--accent-color-border);
 
   background-color: var(--accent-color-opacity);
 }
-#breed-filter-7:not(:checked) ~ main > .cat-container > .breed-7 {
+.breed-filter-7:not(:checked) ~ main > .cat-container > .breed-7 {
   display: none;
 }
-#breed-filter-7:checked ~ aside > .breed-filter > .cool-checkbox[for='breed-filter-7'] {
+.breed-filter-7:checked ~ aside > .breed-filter > .cool-checkbox[for='breed-filter-7'] {
   border-color: var(--accent-color-border);
 
   background-color: var(--accent-color-opacity);
 }
-#breed-filter-8:not(:checked) ~ main > .cat-container > .breed-8 {
+.breed-filter-8:not(:checked) ~ main > .cat-container > .breed-8 {
   display: none;
 }
-#breed-filter-8:checked ~ aside > .breed-filter > .cool-checkbox[for='breed-filter-8'] {
+.breed-filter-8:checked ~ aside > .breed-filter > .cool-checkbox[for='breed-filter-8'] {
   border-color: var(--accent-color-border);
 
   background-color: var(--accent-color-opacity);
 }
-#breed-filter-none:not(:checked) ~ main > .cat-container > .breed-none {
+.breed-filter-none:not(:checked) ~ main > .cat-container > .breed-none {
   display: none;
 }
-#breed-filter-none:checked ~ aside > .breed-filter > .cool-checkbox[for='breed-filter-none'] {
+.breed-filter-none:checked ~ aside > .breed-filter > .cool-checkbox[for='breed-filter-none'] {
   border-color: var(--accent-color-border);
 
   background-color: var(--accent-color-opacity);
